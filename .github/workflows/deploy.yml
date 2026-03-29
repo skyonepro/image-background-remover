@@ -36,6 +36,7 @@ jobs:
         run: npm run build
         env:
           NEXT_PUBLIC_API_URL: ${{ vars.NEXT_PUBLIC_API_URL }}
+          NEXT_PUBLIC_GOOGLE_CLIENT_ID: 427782383186-ucgo3fgiusdbt9glrkv9qr205jmko1j8.apps.googleusercontent.com
 
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
